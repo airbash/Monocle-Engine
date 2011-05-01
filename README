@@ -21,16 +21,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 BUILD HELP
+Look under /doc for a sample of generating project files with premake4 and 
+building with vs2010 using only a few commands
+
 
 =WINDOWS=
-To run on Windows, make sure working directory is set to:
-
-$(SolutionDir)..\..\..\Build\bin\
+Generate your project files, and start using em!
 
 =MAC OSX=
-Make sure you're using XCode version 4 and that you have the shared Scheme selected.
+Needs a little work to setup linking in premake
 
-Change the #defined TEST_* values in main.cpp to try out different demos.
+=Linux=
+Needs a little work to setup linking in premake
+
 
 D E M O  C O N T R O L S
 

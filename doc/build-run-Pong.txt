@@ -1,0 +1,18 @@
+Quickly Build and Run
+-----------------------
+Works on win32 with vs2010 installed in default location and has premake4 in path
+
+cd ..
+"C:\Program Files\Microsoft Visual Studio 10.0\Common7\Tools\vsvars32.bat"
+
+premake4 --testapp=Pong vs2010
+cd build\gen-vs2010
+msbuild PongSolution.sln
+
+cd bin-debug
+copy ..\..\..\monocle-extlibs\windows\vs2010\glew\bin\glew32.dll glew32.dll
+Pong.exe
+
+cd ..\..\..\
+
+
